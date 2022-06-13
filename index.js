@@ -1,0 +1,10 @@
+let salary = 500;
+let employeePension = salary *(5/100);
+let texableAmount = salary - employeePension;
+const taxUnder80 = (80-0)*(0/100);
+const taxUnder250 = (250-80)*(4/100);
+const taxUnder450= (450-250)*(8/100);
+const taxOver450= (texableAmount - 450)*(10/100);
+let totalTax = taxUnder80 + taxUnder250 + taxUnder450 + taxOver450;
+let takeHomePay = texableAmount - totalTax;
+ console.log ("The Take-Home pay is " + takeHomePay);
